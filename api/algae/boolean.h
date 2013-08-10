@@ -1,3 +1,6 @@
+/*
+    Copyright © 2013 Anthony de Almeida Lopes
+ */
 #ifndef ALGAE_BOOLEAN_H
 #define ALGAE_BOOLEAN_H
 

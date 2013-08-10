@@ -1,3 +1,6 @@
+/*
+    Copyright © 2013 Anthony de Almeida Lopes
+ */
 #ifndef ALGAE_PRODUCT_H
 #define ALGAE_PRODUCT_H
 

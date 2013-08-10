@@ -1,3 +1,6 @@
+/*
+    Copyright © 2013 Anthony de Almeida Lopes
+ */
 #ifndef ALGAE_LIST_H
 #define ALGAE_LIST_H
 

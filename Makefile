@@ -1,3 +1,6 @@
+#
+#    Copyright © 2013 Anthony de Almeida Lopes
+#
 PROGRAM=test
 
 #
