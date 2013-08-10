@@ -1,0 +1,18 @@
+@objective
+  The idea here is to implement as little as possible, as [obviously, formally and verifiably] correct
+  as possible to be able to escape from C as soon as possible.
+
+  Try to keep this project Agile: mainly, don't add requirements under requirements.
+  Complete tasks to compilation (and eventually evaluation/testing.)
+  Get it working without unicode, then add unicode/utf8.
+
+  @semantics What does all of this mean?
+    * "obviously"
+      It should be possible for an experienced C programmer to see that it is correct
+    * "verifiably"
+      It should be possible for a tool like Frama-C to prove its correctness
+    * "correct" #TBD
+    * "escape from C"
+      I don't completely know yet
+    * "as soon as possible"
+      Basically the same as "implement as little as possible"
