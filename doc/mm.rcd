@@ -1,0 +1,18 @@
+@project #SLAB #SLOB
+  1. If we were to make a slab allocator, we could put another magic number at the beginning
+    of each page, and then check it in "XYZ_VALIDATE(..)" to know what the object we have
+    **definitely** belongs to the type we expect it to (because it was allocated on an "XYZ"
+    slab). This adds another source of pointer validation without a lot of space overhead
+    (a word) or time overhead (a few assembly instructions, if done efficiently.)
+  2. What if 
+      p = "boolean_t const * boolean_true_introduction(..."
+     and
+      "slabface_dontcare(p,)"
+
+     The constructors return pointers which _they_ say that you can't modify... however I think
+     we'll just drop the const requirement, since we're barely relying on C's type system anyway.
+     @idea
+       In fact, mremap could serve as a way to *actually* protect the memory between allocations.
+  3. The allocation function could do garbage collection reclamation
+  4. Casting could do reference count bumping
+  5. Value simplicity over efficiency (i.e. maybe page-based SLOB)
